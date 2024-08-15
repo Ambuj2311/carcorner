@@ -1,0 +1,106 @@
+:root{
+    --dark-blue: #1a1a2e;        /* Dark Blue */
+      --darker-blue: #16213e;      /* Darker Blue */
+      --accent-blue: #0f3460;         /* Darkest Blue */
+      --font-white: #ffffff;           /* White */
+      --hover-red: #e94560;          /* Light Red */
+      --button-bg-color: #0f3460;      /* Button Background */
+      --border-hover-color: #e94560;   /* Border Bottom Color on Hover */
+      /* --font-family: 'Poppins', sans-serif;  Font for the Menu */
+      /* --logo-font-family: 'Oswald', sans-serif; Font for the Logo */
+  }
+  
+
+
+body {
+    font-family: var(--font-family);
+}
+
+.row.sticky-top {
+    background-color: var(--dark-blue);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    color: var(--font-white);
+}
+
+.menu .navbar {
+    background-color: var(--dark-blue);
+}
+
+.menu .navbar-brand {
+    font-family: var(--font-family);
+    color: var(--font-white);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.menu .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 30 30"><path stroke="rgba(0, 0, 0, 0.5)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+.menu .navbar-nav .nav-link {
+    font-family: var(--font-family);
+    color: var(--font-white);
+    margin: 0 10px;
+    padding: 5px 0;
+    font-size: 1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    position: relative;
+}
+
+.menu .navbar-nav .nav-link:hover {
+    color: var(--hover-red);
+    border-bottom: 3px solid var(--border-hover-color);
+}
+
+.menu .navbar-nav .nav-link.active {
+    color: var(--font-white);
+    font-weight: bold;
+    border-bottom: 3px solid var(--border-hover-color);
+}
+
+.menu .navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--border-hover-color);
+    transition: width 0.3s ease;
+}
+
+.menu .navbar-nav .nav-link:hover::before,
+.menu .navbar-nav .nav-link.active::before {
+    width: 100%;
+}
+
+.menu .d-flex .form-control {
+    font-family: var(--font-family);
+    background-color: var(--font-white);
+    color: var(--accent-blue);
+    border: 1px solid var(--darker-blue);
+}
+
+.menu .d-flex .btn-dark {
+    font-family: var(--font-family);
+    background-color: var(--button-bg-color);
+    color: var(--font-white);
+    border: 1px solid var(--hover-red);
+    transition: background-color 0.3s ease;
+}
+
+.menu .d-flex .btn-dark:hover {
+    background-color: var(--hover-red);
+    border-color: var(--hover-red);
+}
+
+

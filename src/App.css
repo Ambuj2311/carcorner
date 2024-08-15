@@ -1,0 +1,110 @@
+:root{
+  --teal: #072940;
+  --dark-blue: #1a1a2e;        /* Dark Blue */
+    --darker-blue: #16213e;      /* Darker Blue */
+    --accent-blue: #0f3460;         /* Darkest Blue */
+    --font-white: #ffffff;           /* White */
+    --hover-red: #e94560;          /* Light Red */
+    --button-bg-color: #0f3460;      /* Button Background */
+    --border-hover-color: #e94560;   /* Border Bottom Color on Hover */
+    --font-family: 'Poppins', sans-serif;  /* Font for the Menu */
+    --logo-font-family: 'Oswald', sans-serif; /* Font for the Logo */
+}
+
+.body{
+  display: flex;
+}
+.sectionHeading{
+  display: flex;
+  justify-content:center ;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.sectionHeading h2{
+  font-family: var(--font-family);
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.brandContainer{
+  margin-left:5%;
+  margin-bottom: 5%;
+}
+.latestContainer{
+  margin:0px 6% ;
+}
+
+.btns{
+  background-color: var(--dark-blue);
+  color: var(--font-white);
+  border: 1px solid blue;
+}
+
+.btns:hover{
+  background-color: blue;
+  color: white;
+}
+.trending h2{
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 2%;
+  color: var(--darker-blue);
+}
+.trending{
+  margin: 2% 5% ;
+}
+.Tcardimg{
+  float: left;
+  margin: 2%;
+}
+
+.Tcardbody{
+  float: left;
+  margin: 2%;
+  width: 700px;
+  height: 200px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.Vcardimg{
+  float: left;
+  margin: 2%;
+  display: flex;
+  align-items: center;
+  height: 250px;
+}
+
+.Vcardbody{
+  float: left;
+  margin: 2%;
+  width: 700px;
+  height: 280px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.contact-us {
+  margin: 2% 0%;
+}
+
+.contact-image {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 8%;
+}
+
+.contact-form {
+  background-color: var(--darker-blue); /* Bootstrap light background */
+  border-left: 1px solid var(--font-white);
+  height: 400px;
+  width: 500px;
+  border-radius: 20px;
+  margin-bottom: 5%;
+  color: var(--font-white);
+  padding: 20px;
+  box-sizing: border-box;
+}
+

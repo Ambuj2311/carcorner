@@ -1,0 +1,12 @@
+
+:root{
+  --dark-blue: #1a1a2e;        /* Dark Blue */
+    --darker-blue: #16213e;      /* Darker Blue */
+    --accent-blue: #0f3460;         /* Darkest Blue */
+    --font-white: #ffffff;           /* White */
+    --hover-red: #e94560;          /* Light Red */
+    --button-bg-color: #0f3460;      /* Button Background */
+    --border-hover-color: #e94560;   /* Border Bottom Color on Hover */
+    --font-family: 'Poppins', sans-serif;  /* Font for the Menu */
+    --logo-font-family: 'Oswald', sans-serif; /* Font for the Logo */
+}
